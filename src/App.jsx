@@ -4,6 +4,8 @@ import EmployeeData from './data/employeeData';
 
 function App() {
   console.log(EmployeeData);
+  const empCards = EmployeeData.map((empData) => <Employee empData={empData} />);
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -11,7 +13,7 @@ function App() {
           Ticket Tracker
         </h1>  
       </header>
-      <Employee empData={EmployeeData}/>
+      <div className='App-empCards'>{empCards}</div>
     </div>
   );
 }

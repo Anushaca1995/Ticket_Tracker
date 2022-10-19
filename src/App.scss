@@ -11,6 +11,12 @@
     font-size: calc(10px + 2vmin);
     color: $color-black;
   }
+  .App-empCards{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
 }
 
 
