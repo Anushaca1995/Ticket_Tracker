@@ -1,0 +1,35 @@
+.employee {
+  width: 100%;
+}
+.employee__card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid rgba(45, 52, 54, 0.25);
+  box-shadow: 0px 10px 20px rgba(45, 52, 54, 0.25);
+  background-color: bisque;
+}
+.employee__card--container {
+  display: flex;
+  justify-content: space-around;
+}
+.employee__card--container button {
+  width: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: blanchedalmond;
+  color: crimson;
+}
+
+@media screen and (min-width: 992px) {
+  .employee {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=Employee.css.map */
